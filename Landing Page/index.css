@@ -1,0 +1,126 @@
+*{
+    font-family: 'Arial',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./IMG/car\ midjourney.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 85%;
+    z-index: -1;
+}
+header{
+    padding: 20px;
+    box-shadow: 0px 0px 10px 1px rgb(105, 105, 105);
+}
+nav{
+    width: 90%;
+    height: 30px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav img{
+    cursor: pointer;
+    width: 150px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+}
+nav ul li{
+    margin: 20px;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    position: relative;
+    transition: .5s;
+}
+nav ul li:hover{
+    color: #93B79E;
+    transition: .5s;
+}
+nav ul li:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 10%;
+    background-color: #93B79E;
+    transition: .5s;
+}
+nav ul li:hover::after{
+    width: 100%;
+    transition: .5s;
+}
+
+/* start of landpage content */
+.content{
+    color: white;
+    width: 60%;
+    margin: 200px 200px;
+}
+.content mark{
+    background-color: #4AA245;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+}
+.content h1,p,button{
+    margin: 10px;
+}
+.content h1{
+    font-size: 65px;
+}
+.content p{
+    font-size: 20px;
+}
+.content button{
+    width: 20%;
+    height: 50px;
+    color: #4AA245;
+    font-size: 22.5px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: transparent;
+    border: 2px solid #4AA245;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+    transition: .3s
+}
+.content button:hover{
+    color: white;
+    transition: .3s;
+}
+.content button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #4AA245;
+    transition: .5s;
+    z-index: -1;
+}
+.content button:hover::before{
+    width: 100%;
+    transition: .5s;
+}
+
+/* end of landpage content */
