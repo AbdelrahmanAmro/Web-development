@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    padding-top: 300px;
+    width: 100%;
+    height: 100vh;
+    background-color: grey;
+    overflow-x: hidden;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 1px rgb(105, 105, 105);
+    z-index: 999;
+    background: #a8a9a8;
+}
+nav{
+    width: 90%;
+    height: 30px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav img{
+    cursor: pointer;
+    width: 100px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+}
+nav ul li{
+    margin: 20px;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    position: relative;
+    transition: .5s;
+}
+nav ul li:hover{
+    color: #93B79E;
+    transition: .5s;
+}
+nav ul li:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 10%;
+    background-color: #404b4d;
+    transition: .5s;
+}
+nav ul li:hover::after{
+    width: 100%;
+    transition: .5s;
+}
+nav ul a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.special-thanks h1{
+    position: absolute;
+    top: 30px;
+    font-size: 300px;
+    color: black;
+    z-index: 0;
+    opacity: 15%;
+}
+.special-thanks{
+    width: 100%;
+    height: 100vh;
+    padding-bottom: 100px;
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.parent{
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex: row;
+    z-index: 1;
+}
+.special-thanks .box{
+    border: 2px solid white;
+    width: 20%;
+    height: 350px;
+    margin: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    backdrop-filter: blur(20px);
+    transition: .3s;
+    z-index: 100;
+}
+.special-thanks .box:hover{
+    transform: scale(1.15);
+    transition: .3s;
+}
+.special-thanks .box img{
+    border-radius: 50%;
+    margin-bottom: 20px;
+    width: 150px;
+    height: 200px;
+}
+.special-thanks .box p{
+    color: white;
+    margin-top: 15px;
+    text-align: center;
+}
+.special-thanks label{
+    font-weight: 800;
+}
